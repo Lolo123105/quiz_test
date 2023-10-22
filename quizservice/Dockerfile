@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt --no-cache-dir
 
 COPY . .
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8090", "quizservice.wsgi"] 
+CMD ["python", "manage.py", "runserver"] 

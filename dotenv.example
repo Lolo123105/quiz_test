@@ -1,0 +1,6 @@
+POSTGRES_DB=quiz_test
+POSTGRES_USER=quiz_user
+POSTGRES_PASSWORD=quiz_password
+DB_NAME=quiz_test
+DB_HOST=db
+DB_PORT=5432
