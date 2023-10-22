@@ -11,6 +11,11 @@ services:
       - pg_data:/var/lib/postgresql/data
   backend:
     build: ./quizservice/
-    env_file: .env
+    env_file:
+      - .env
     depends_on:
       - db
+  gateway:
+    build: ./gateway/
+    ports:
+      - 8000:80
